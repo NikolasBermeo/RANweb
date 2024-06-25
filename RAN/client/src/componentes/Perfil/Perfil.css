@@ -1,0 +1,66 @@
+/* Agrega estilos para el icono de usuario */
+.usuario-icono {
+    display: inline-flex; /* Para alinear en línea con otros elementos */
+    align-items: center; /* Para alinear verticalmente con otros elementos */
+    margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+  }
+  
+  .icono-usuario {
+    width: 24px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 24px;
+    margin-right: 5px; /* Ajusta el margen derecho según sea necesario */
+  }
+  
+  /* Opcional: estilos para los elementos <a> */
+  .head_titu a {
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+    font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
+  }
+  /* Opcional: estilos para el botón de menú */
+  .toggle-nav-btn {
+    display: none; /* Para ocultar el botón de menú en tamaños de pantalla más grandes */
+  }
+  
+  /* Estilos para el menú desplegable */
+  @keyframes dropdown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 60px; /* Ajusta la distancia desde la parte superior según tu diseño */
+    right: 0;
+    background-color: #1680e342; /* Color de fondo del menú */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+    animation: dropdown 0.3s ease forwards; /* Aplicar animación */
+  }
+  .menu-desplegable button.btn-perfil {
+    background-image: linear-gradient(to right, hsl(295, 89%, 41%), hsl(61, 92%, 43%)); /* Linear gradient de color para el fondo del botón */
+    border: none; /* Eliminar bordes */
+    color: #fff; /* Color de texto */
+    padding: 8px 16px; /* Espaciado interno */
+    margin-bottom: 5px; /* Espaciado entre botones */
+    cursor: pointer; /* Cursor al pasar */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Eliminar decoración de texto */
+    display: block; /* Ajustar a bloque */
+    width: 100%; /* Ajustar ancho */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+  .menu-desplegable button.btn-perfil:hover {
+    background-image: linear-gradient(to right, hsl(188, 91%, 45%), hsl(271, 76%, 44%)); /* Linear gradient de color para el fondo del botón */
+  }
+  .menu-desplegable.active {
+    display: block;
+  }
+  
