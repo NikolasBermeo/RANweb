@@ -1,0 +1,26 @@
+{
+  "name": "dir",
+  "version": "1.0.0",
+  "description": "gajhd",
+  "main": "index.js",
+  "scripts": {
+    "test": "d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolasBermeo/RANweb.git"
+  },
+  "author": "Daniela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikolasBermeo/RANweb/issues"
+  },
+  "homepage": "https://github.com/NikolasBermeo/RANweb#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
